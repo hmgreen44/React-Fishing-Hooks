@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-function ProductsPage() {
+export default function ProductsPage() {
     const [productsData, setProductsData] = useState([])
 
     const axiosGet = () => {
@@ -29,11 +29,13 @@ function ProductsPage() {
             {productsData.map((item, index) => {
                 return (
                     <div className='col-md-3 col-sm-12 mt-2' key={index}>
-                        <div class="card w-100 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">{item.name}</h5>
-                                <a href="#" class="card-link">More Info</a>
-                                <a href="#" class="card-link">Add to Cart</a>
+                        <div className="card w-100 h-100">
+                            <div className="card-body">
+                                <h5 className="card-title">{item.name}</h5>
+                                {/* <Link to="/ProductPage">
+                                <button type="button">More Info</button></Link>
+                                <Link to="card-link">
+                                <button type="button">Add to Cart</button></Link> */}
                             </div>
                         </div>
                     </div>
@@ -43,5 +45,3 @@ function ProductsPage() {
     )
 }
 
-
-export default ProductsPage
