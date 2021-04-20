@@ -4,7 +4,7 @@ import ProductsPage from './Components/ProductsPage'
 
 function App() {
   return (
-    <div className="Container mt-5">
+    <div className="container mt-5">
       <div className="row text-center">
         <div className="col">
           <h1> Fishing Hooks </h1>
