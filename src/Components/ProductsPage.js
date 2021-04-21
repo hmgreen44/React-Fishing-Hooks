@@ -15,7 +15,7 @@ export default function ProductsPage(props) {
                                 <h5 className="card-title">{item.name}</h5>
                                 <Link to={`/product/${item.id}`}>
                                 <button type="button">More Info</button></Link>
-                                <Link to="card-link">
+                                <Link to="/CartPage/">
                                 <button type="button">Add to Cart</button></Link>
                             </div>
                         </div>

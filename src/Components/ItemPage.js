@@ -18,6 +18,8 @@ export default function ItemPage(props) {
                     <p className="card-text"></p>
                     <Link to="/">
                         <button type="button">Back to Products Page</button></Link>
+                    <Link to="/CartPage/">
+                        <button type="button">Add to Cart</button></Link>
                 </div>
             </div>
 
